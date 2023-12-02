@@ -1,0 +1,87 @@
+/* Especificidad: 002*/
+main>article {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 50%;
+    border: 0.12em solid #A900C7;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-right: 0.5em;
+}
+
+/* Especificidad: 003*/
+main>section>p {
+    font-weight: bold;
+}
+
+/* Especificidad: 013*/
+main>section>p:last-of-type {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    gap: 0.5em;
+}
+
+/* Especificidad: 002*/
+article section {
+    display: flex;
+    justify-content: right;
+    gap: 0.4em;
+}
+
+/* Especificidad: 002*/
+article p {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/* Especificidad: 003*/
+article>section>button {
+    margin-top: 0.2em;
+    width: fit-content;
+    margin-bottom: 0.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Especificidad: 013*/
+article>section>button:hover {
+    /*Sin color de primer plano establecido*/
+    background-color: #d3d5d6;
+}
+
+/* Especificidad: 013*/
+article>section>button:nth-of-type(2) {
+    margin-right: 0.5em;
+    /*Sin color de fondo establecido*/
+    color: red;
+}
+
+
+/* Especificidad: 002*/
+article h3 {
+    padding-left: 0.3em;
+    border-bottom: solid;
+    border-radius: 0.25em;
+    /*Hereda  background-color de body*/
+    color: #A900C7;
+    margin-top: 0.5em;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+
+    /* Especificidad: 002*/
+    main>article {
+        /* Redefinición de max-width */
+        max-width: 100%;
+    }
+
+    /* Especificidad: 013*/
+    main>section>p:last-of-type {
+        min-width: 40%;
+    }
+}

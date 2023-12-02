@@ -1,0 +1,163 @@
+/*Raúl Mera Soto, UO287827*/
+/* Colores
+    #f0f4f5 White
+    #172dd3 Blue 
+    #3a3a3a Black
+    #941483 Purple
+*/
+/* Especificidad: 001*/
+body {
+    font-family: 'Century Gothic', sans-serif;
+    color: #000000;
+    background-color: #f0f4f5;
+    text-align: justify;
+    font-size: 0.95em;
+}
+
+/* Especificidad: 003*/
+body>header h1 {
+    background-color: #3a3a3a;
+    color: #f0f4f5;
+    font-size: 2.7em;
+}
+
+/* Especificidad: 001*/
+h2 {
+    /*hereda  background-color de body #f0f4f5*/
+    color: #3a3a3a;
+    font-size: 2.3em;
+}
+
+/* Especificidad: 001*/
+h3 {
+    /*hereda  background-color de body #f0f4f5*/
+    color: #172dd3;
+    font-size: 1.5em;
+}
+
+/* Especificidad: 001*/
+h4 {
+    /*hereda  background-color de body #f0f4f5*/
+    color: #941483;
+    font-size: 1.2em;
+}
+
+/* Especificidad: 001*/
+h5 {
+    /*hereda  background-color de body #f0f4f5*/
+    color: #FF3300;
+    font-size: 1.1em;
+}
+
+/* Especificidad: 001*/
+h6 {
+    /*hereda  background-color de body #f0f4f5*/
+    color: #66280a;
+    font-size: 1.05em;
+}
+
+/* Especificidad: 002*/
+body>header {
+    color: #f0f4f5;
+    background-color: #3a3a3a;
+}
+
+/* Especificidad: 004*/
+body>header nav a {
+    /*hereda  background-color de header #3a3a3a*/
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    color: #f0f4f5;
+    padding: 0.2em;
+}
+
+/* Especificidad: 014*/
+body>header nav a:visited {
+    /*hereda  background-color de header #3a3a3a*/
+    color: #f0f4f5;
+}
+
+/* Especificidad: 014*/
+body>header nav a:hover {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+/* Especificidad: 001*/
+ul {
+    list-style: circle;
+}
+
+/* Especificidad: 002*/
+ol li,
+ul li {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Especificidad: 013*/
+section ul li:nth-child(3) {
+    text-decoration: underline #172dd3;
+}
+
+/* Especificidad: 003*/
+ul ul li {
+    font-weight: normal;
+    list-style: square;
+    font-size: 0.85em;
+}
+
+/* Especificidad: 001*/
+dt {
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+/* Especificidad: 001*/
+dd {
+    font-size: 0.9em;
+}
+
+/* Especificidad: 001*/
+table {
+    border-collapse: collapse;
+    border: 2px solid #941483;
+    width: 20%;
+}
+
+/* Especificidad: 001*/
+caption {
+    font-family: "Rock Salt", cursive;
+    padding: 0.5em;
+    font-style: italic;
+    caption-side: top;
+    /*hereda  background-color de body #f0f4f5*/
+    color: #941483;
+    text-align: center;
+}
+
+/* Especificidad: 001*/
+tbody {
+    text-align: center;
+}
+
+/* Especificidad: 002*/
+tbody th,
+tbody td {
+    padding: 0.7em;
+    border: 1px solid #941483;
+}
+
+/*Especificidad 001 */
+video {
+    max-width: 80%;
+    height: auto;
+    width: auto;
+    max-height: 70%;
+}
+
+/*Especificidad 001 */
+audio {
+    max-width: 100%;
+}

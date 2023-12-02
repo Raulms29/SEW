@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Raúl Mera Soto" />
+    <title>Escritorio Virtual-Meteorología</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/meteorología.css" />
+    <meta name="description" content="documento para utilizar en otros módulos de la asignatura" />
+    <meta name="keywords" content="meteorología" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="multimedia/img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/pais.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenido que aparece en el navegador -->
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a accesskey="I" href="index.html" tabindex=1>Inicio</a>
+            <a accesskey="S" href="sobremi.html" tabindex=2>Sobre Mi</a>
+            <a accesskey="N" href="noticias.html" tabindex=3>Noticias</a>
+            <a accesskey="A" href="agenda.html" tabindex=4>Agenda</a>
+            <a accesskey="M" href="meteorologia.html" tabindex=5>Meteorologia</a>
+            <a accesskey="V" href="viajes.html" tabindex=6>Viajes</a>
+            <a accesskey="J" href="juegos.html" tabindex=7>Juegos</a>
+            <a accesskey="T" href="api.html" tabindex=8>Notas</a>
+        </nav>
+    </header>
+    <h2>Meteorología</h2>
+    <script>
+        var pais = new Pais("Sri Lanka", "Colombo", 24532000, "República Semipresencialista", 6.9, 79.916389, "Budismo");
+        document.write("<h3>Información de " + pais.getNombre() + "</h3>");
+        document.write(pais.getInformacionSecundaria());
+        pais.escribirCoordenadas();
+        pais.showWeatherForecast();
+    </script>
+    <section>
+        <header>
+            <h3>Tiempo en Colombo</h3>
+        </header>
+    </section>
+
+
+
+</body>
+
+</html>

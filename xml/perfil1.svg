@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points="20.0,260.0
+260.0,16.199616122840744
+395.13513513513516,10.0
+885.4054054054055,45.97578692493966
+885.4054054054055,260.0
+20.0,260.0
+20.0,260.0
+"
+style="fill:white;stroke:red;stroke-width:4" />
+<text x = "30.0" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Inicio</text>
+<text x = "270.0" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Mini Mirador del Fin del Mundo</text>
+<text x = "405.13513513513516" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Mirador del Fin del Mundo</text>
+<text x = "895.4054054054055" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Cascadas de Baker</text>
+</svg> 

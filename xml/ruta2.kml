@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>rutasEsquema.xml</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+81.04842222222221,6.8727028,0.0
+81.04866666666666,6.8741278,0.0
+81.06308055555556,6.865125,0.0
+81.0608861111111,6.8767639,0.0
+</coordinates>
+<altitudeMode>clampToGround</altitudeMode>
+</LineString>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

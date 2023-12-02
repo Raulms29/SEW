@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Raúl Mera Soto" />
+    <title>Escritorio Virtual-Sobre Mi</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/img/favicon.ico" />
+    <meta name="description" content="Documento con información personal" />
+    <meta name="keywords" content="mi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- Datos con el contenido que aparece en el navegador -->
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a accesskey="I" href="index.html" tabindex=1>Inicio</a>
+            <a accesskey="S" href="sobremi.html" tabindex=2>Sobre Mi</a>
+            <a accesskey="N" href="noticias.html" tabindex=3>Noticias</a>
+            <a accesskey="A" href="agenda.html" tabindex=4>Agenda</a>
+            <a accesskey="M" href="meteorologia.html" tabindex=5>Meteorologia</a>
+            <a accesskey="V" href="viajes.html" tabindex=6>Viajes</a>
+            <a accesskey="J" href="juegos.html" tabindex=7>Juegos</a>
+            <a accesskey="T" href="api.html" tabindex=8>Notas</a>
+        </nav>
+    </header>
+
+    <h2>Sobre Mi</h2>
+
+    <section>
+        <h3>Información Personal</h3>
+        <p>Nombre y UO: Raúl Mera Soto UO287827</p>
+
+        <p>Correo Electrónico <a href=" mailto:UO287827@uniovi.es">
+                UO287827@uniovi.es</a></p>
+
+        <picture>
+            <source media="(max-width: 465px)" srcset="multimedia/img/retrato150.jpg" />
+            <source media="(max-width: 799px)" srcset="multimedia/img/retrato200.jpg" />
+            <source media="(min-width: 800px)" srcset="multimedia/img/retrato300.jpg" />
+            <img src="multimedia/img/retrato300.jpg" alt="Mi retrato" />
+        </picture>
+
+        <p>Una foto de mi pueblo nevado</p>
+
+        <picture>
+            <source media="(max-width: 465px)" srcset="multimedia/img/snow-town250.jpg" />
+            <source media="(max-width: 799px)" srcset="multimedia/img/snow-town350.jpg" />
+            <source media="(min-width: 800px)" srcset="multimedia/img/snow-town450.jpg" />
+            <img src="multimedia/img/snow-town450.jpg" alt="Pueblo nevado" />
+        </picture>
+    </section>
+
+    <section>
+        <h3>Aficiones</h3>
+        <ul>
+            <li>Cine y series de televisión</li>
+            <li>Fútbol</li>
+            <li>Videojuegos
+                <ul>
+                    <li>Red Dead Redemption 2 </li>
+                    <li>Hollow Knight</li>
+                    <li>Celeste</li>
+                </ul>
+            </li>
+            <li>Senderismo</li>
+            <li>Pesca</li>
+        </ul>
+
+        <p>Banda sonora del videojuego Celeste</p>
+
+        <audio controls="">
+            <source src="multimedia/audio/celeste_soundtrack_03_resurrections.mp3" type="audio/mpeg">
+            <source src="multimedia/audio/celeste_soundtrack_03_resurrections.wav" type="audio/wav">
+        </audio>
+
+        <h4>Grupos y Cantantes Favoritos</h4>
+        <ol>
+            <li>Imagine Dragons</li>
+            <li>Pablo Alborán</li>
+            <li>Stromae</li>
+            <li>Lukas Graham</li>
+            <li>Avicci</li>
+        </ol>
+    </section>
+
+    <section>
+        <h3>Asignaturas Favoritas del Grado</h3>
+        <dl>
+            <dt>Arquitectura de Computadores:</dt>
+            <dd>Aún siendo la asignatura más difícil hasta ahora me resultó muy interesante aprender sobre el
+                funcionamiento
+                de
+                componentes como la CPU o la memoria</dd>
+            <dt>Tecnología y Paradigmas de la Programación:</dt>
+            <dd>El paradigma funcional me gustó más de lo que esperaba en un primer momento, al igual que el lenguaje de
+                programación C#.</dd>
+            <dt>Computabilidad:</dt>
+            <dd>Me sorprendió el hecho de que con instrucciones muy sencillas como las que tiene una máquina de Turing
+                se puede crear cualquier función computable. A su vez me impresionó que existann problemas que no se
+                puedan
+                resolver
+                y que tal afirmación ha sido demostrada.
+            </dd>
+            <dt>Estructuras de Datos:</dt>
+            <dd>Me gustó en general la forma de impartir la asignatura, implementar por mi mismo las diferentes
+                estructuras en los laboratorios hizo más sencilla su comprensión</dd>
+            <dt>Tecnología Electrónica de Computadores:</dt>
+            <dd>Las prácticas de laboratorio me resultaron muy entretenidas, en especial las del robot que debíamos
+                programar</dd>
+        </dl>
+    </section>
+
+    <section>
+        <!-- Originalmente era un aside ya que no se encuentra estrictamente relacionado con el resto del contenido -->
+        <h3>Otras Actividades</h3>
+        <p>Una reación de precipitacion que realicé en el instituto. En ella reaccionan yoduro de potasio y nitrato de
+            plomo
+            para formar
+            nitrato de potasio y yoduro de plomo, siendo el segundo el que le da su característico color al compuesto
+            resultante.
+        </p>
+
+        <video controls="" preload="auto">
+            <source src="multimedia/video/reaccion_precipitacion.mp4" type="video/mp4">
+            <source src="multimedia/video/reaccion_precipitacion.webm" type="video/webm">
+        </video>
+    </section>
+
+    <aside>
+        <h3>Temperatura media en Oviedo en los últimos 10 años</h3>
+        <table>
+            <caption> Temperatura Media </caption>
+            <tbody>
+
+                <tr>
+                    <th scope="col" id="año">Año</th>
+                    <th scope="col" id="temperatura">Temperatura (°C)</th>
+                </tr>
+                <tr>
+                    <th scope="row" id="2012" headers="año">2012</th>
+                    <td headers="temperatura 2012">12.7</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2013" headers="año">2013</th>
+                    <td headers="temperatura 2013">12.3</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2014" headers="año">2014</th>
+                    <td headers="temperatura 2014">13.5</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2015" headers="año">2015</th>
+                    <td headers="temperatura 2015">13.4</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2016" headers="año">2016</th>
+                    <td headers="temperatura 2016">12.3</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2017" headers="año">2017</th>
+                    <td headers="temperatura 2017">13.3</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2018" headers="año">2018</th>
+                    <td headers="temperatura 2018">13.1</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2019" headers="año">2019</th>
+                    <td headers="temperatura 2019">13.2</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2020" headers="año">2020</th>
+                    <td headers="temperatura 2020">13.8</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2021" headers="año">2021</th>
+                    <td headers="temperatura 2021">13.0</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2022" headers="año">2022</th>
+                    <td headers="temperatura 2022">14.0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>La información sobre las temperaturas fue obtenida <a
+                href="https://www.tutiempo.net/clima/ws-80150.html">aquí</a></p>
+    </aside>
+
+    <section>
+        <h3>Páginas Relevantes</h3>
+        <p>Aquí puedes comparar el aspecto que tiene la página principal del W3C con el que tenía hace 10 años</p>
+        <p><a href="https://www.w3.org/"> Actualmente</a> <a
+                href="https://web.archive.org/web/20130102101204/https://www.w3.org/">Hace 10 años</a></p>
+    </section>
+</body>
+
+</html>

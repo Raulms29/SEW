@@ -1,0 +1,51 @@
+/* Especificidad: 002*/
+body>section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Especificidad: 002*/
+section header {
+    width: 100%;
+}
+
+/* Especificidad: 002*/
+section img {
+    /*Sin color de primer plano establecido*/
+    background: #1C7CCC;
+    border-radius: 100%;
+}
+
+/* Especificidad: 003*/
+body>section>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 15.5%;
+    margin: 0.5%;
+    border: 0.2em solid black;
+    border-radius: 5%;
+}
+
+/* Especificidad: 012*/
+section p:first-of-type {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 950px) {
+
+    /* Especificidad: 003*/
+    body>section>section {
+        /* Redefinición de width*/
+        width: 40%;
+    }
+
+    /* Especificidad: 003*/
+    body>section>section {
+        /* Redefinición de margin-bottom*/
+        margin-bottom: 2%;
+    }
+}

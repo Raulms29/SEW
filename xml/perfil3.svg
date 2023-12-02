@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points="20.0,254.212271973466
+145.36842105263156,40.05729166666669
+405.36842105263156,260.0
+677.578947368421,10.0
+677.578947368421,260.0
+20.0,260.0
+20.0,254.212271973466
+"
+style="fill:white;stroke:red;stroke-width:4" />
+<text x = "30.0" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Inicio</text>
+<text x = "155.36842105263156" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Pirudangala Rock</text>
+<text x = "415.36842105263156" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Museo de Sigiriya</text>
+<text x = "687.578947368421" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Sigiriya Rock</text>
+</svg> 

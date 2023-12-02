@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points="45.4421768707483,147.9902398552688
+65.4421768707483,169.4829348645128
+320.95238095238096,10.0
+671.8367346938776,260.0
+671.8367346938776,260.0
+45.4421768707483,260.0
+45.4421768707483,147.9902398552688
+"
+style="fill:white;stroke:red;stroke-width:4" />
+<text x = "55.4421768707483" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Inicio</text>
+<text x = "75.4421768707483" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Calle principal de Ella</text>
+<text x = "330.95238095238096" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Little Adam's Peak</text>
+<text x = "681.8367346938776" y="280.0
+" style="writing-mode: tb; glyph-orientation-vertical: 0;">Nine Arches Bridge</text>
+</svg> 

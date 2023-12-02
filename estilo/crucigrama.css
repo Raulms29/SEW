@@ -1,0 +1,45 @@
+/* Especificidad: 001*/
+main {
+    width: 30em;
+    height: 25em;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0;
+    border: 0.2em solid black;
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* Especificidad: 001*/
+    main {
+        /* Redefinición de width */
+        width: 100%;
+    }
+}
+
+/* Especificidad: 001*/
+p {
+    margin: 0;
+    text-align: center;
+    border: 0.03em solid black;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Especificidad: 011*/
+/* p:not([data-state="blocked"]) { */
+/*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
+/* color: blue; */
+/* } */
+
+/* Especificidad: 011*/
+
+p[data-state="empty"] {
+    /*No hay color de primer plano establecido, en este caso no es necesario ya que los párrafos están vacíos*/
+    background-color: black;
+}
+
+/* Especificidad: 002*/
+body>button {
+    margin-bottom: 1em;
+}

@@ -1,0 +1,63 @@
+/* Especificidad: 002*/
+main>article {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 50%;
+    border: 0.12em solid black;
+    margin-bottom: 1em;
+    border-radius: 0.5%;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    margin-top: 1em;
+}
+
+/* Especificidad: 013*/
+main>article>p:first-of-type {
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+/* Especificidad: 013*/
+main>article>p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Especificidad: 013*/
+main>article>p:nth-of-type(3) {
+    text-align: right;
+}
+
+/* Especificidad: 003*/
+main>section>p {
+    font-weight: bold;
+}
+
+/* Especificidad: 002*/
+main>p {
+    font-weight: bold;
+}
+
+/* Especificidad: 013*/
+main>section>p:last-of-type {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    gap: 0.5em;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    /* Especificidad: 002*/
+    main>article {
+        /* Redefinición de max-width */
+        max-width: 100%;
+    }
+
+    /* Especificidad: 013*/
+    main>section>p:last-of-type {
+        min-width: 40%;
+    }
+}

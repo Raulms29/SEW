@@ -1,0 +1,34 @@
+/* Especificidad: 002*/
+body>nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3em;
+}
+
+
+/* Especificidad: 003*/
+body>nav a {
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    /*hereda  background-color de body*/
+    color: #3a3a3a;
+    padding: 0.2em;
+}
+
+/* Especificidad: 013*/
+body>nav a:visited {
+    /*hereda  background-color de body*/
+    color: #3a3a3a;
+}
+
+/* Especificidad: 013*/
+body>nav a:hover {
+    font-weight: bold;
+    font-size: 1.6em;
+    /*hereda  background-color de body*/
+    color: #1414c4d2
+}

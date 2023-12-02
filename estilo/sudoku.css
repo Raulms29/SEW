@@ -1,0 +1,43 @@
+/* Especificidad: 001*/
+main {
+    width: 30em;
+    height: 25em;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Especificidad: 001*/
+    main {
+        max-width: 100%;
+    }
+}
+
+/* Especificidad: 001*/
+p {
+    margin: 0;
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Especificidad: 011*/
+p:nth-child(3n) {
+    border-right: 2px solid black;
+}
+
+/* Especificidad: 021*/
+p:nth-child(n+19):nth-child(-n+27),
+p:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 2px solid black;
+}
+
+/* Especificidad: 011*/
+p:not([data-state="blocked"]) {
+    /*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
+    color: blue;
+}

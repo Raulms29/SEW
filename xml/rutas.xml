@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="rutas.dtd" type="application/xml-dtd"?>
+<rutas>
+    <ruta nombre="Horton Plains" tipo="Senderismo" medio_transporte="A pie"
+        fecha_inicio="03/08/2018"
+        hora_inicio="07:00" duracion=" 4 horas"
+        agencia="Sin agencia"
+        personas_adecuadas="Se puede ir con niños acostumbrados a caminar"
+        lugar_inicio="Oficina del Parque Horton Plains" direccion="Parque Nacional Horton Plains"
+        recomendacion="8">
+        <descripcion> Caminata por el parque nacional de Horton Plains [llanuras de Horton], en Sri
+            Lanka, una planicie a 2.000 metros de altitud que acercan al caminante al Fin del Mundo
+            (World's End), un mirador que cae a cuchillo 850 metros, para llevarlo luego a las
+            cascadas Baker (Baker's falls), siempre entre parajes hermosos que combinan pequeños
+            tramos de bosques con páramos acolinados poblados de azaleas. </descripcion>
+        <coordenadas>
+            <longitud>80°48'26.51" E</longitud>
+            <latitud>6°48'07.03" N</latitud>
+            <altitud>1938 m</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://es.wikiloc.com/rutas-senderismo/horton-plains-sri-lanka-27187807</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Parque_nacional_de_las_Llanuras_de_Horton</referencia>
+            <referencia>https://en.wikipedia.org/wiki/Baker%27s_Falls</referencia>
+        </referencias>
+        <hitos>
+            <hito nombre="Mini Mirador del Fin del Mundo"
+                descripcion="Mirador desde el que ya se contemplan unas maravillosas vistas del valle que forma, abajo, el río Kiriketi.">
+                <coordenadas>
+                    <longitud>80°48'00.95" E</longitud>
+                    <latitud>6°47'07.11" N</latitud>
+                    <altitud>2084 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">0</distancia>
+                <galeria_fotos>
+                    <fotografia>mini_fin_del_mundo</fotografia>
+                </galeria_fotos>
+                <galeria_videos>
+                    <video>video1</video>
+                </galeria_videos>
+            </hito>
+            <hito nombre="Mirador del Fin del Mundo"
+                descripcion="Acantilado de 870 metros de altura con vistas espectaculares">
+                <coordenadas>
+                    <longitud>80°47'39.67" E</longitud>
+                    <latitud>6°46'49.60" N</latitud>
+                    <altitud>2088 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">1.3</distancia>
+                <galeria_fotos>
+                    <fotografia>fin_del_mundo</fotografia>
+                </galeria_fotos>
+            </hito>
+            <hito nombre="Cascadas de Baker"
+                descripcion="Cascada de 20 metros que obtuvo su nombre del explorador britanico Sir Samuel Baker">
+                <coordenadas>
+                    <longitud>80°47'22.08" E</longitud>
+                    <latitud>6°47'33.79" N</latitud>
+                    <altitud>2065 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">2.1</distancia>
+                <galeria_fotos>
+                    <fotografia>baker_falls</fotografia>
+                </galeria_fotos>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta nombre="Ella - Little Adam's Peak - Nine Arches Bridge" tipo="Caminata"
+        medio_transporte="A pie" duracion="3 horas y media" agencia="Sin Agencia"
+        personas_adecuadas="Adecuado para la mayoría" lugar_inicio="Ella"
+        direccion="Ella Main Street" recomendacion="7">
+        <descripcion>Ruta circular preciosa. Un recorrido sencillo, muy bonito y con el que podemos
+            visitar Little Adam's Peak y Nine Arches Bridge, dos de los puntos más interesantes de
+            la zona. </descripcion>
+        <coordenadas>
+            <longitud>81°02'54.32" E</longitud>
+            <latitud>6°52'21.73" N</latitud>
+            <altitud>1027 m</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>
+                https://es.wikiloc.com/rutas-senderismo/ella-little-adams-peak-1-146-m-nine-arches-bridge-40847339</referencia>
+            <referencia>
+                https://www.holidify.com/places/ella/main-street--sightseeing-1264874.html#:~:text=The%20Main%20Street%20at%20Ella,waiting%20to%20pick%20up%20passengers.</referencia>
+            <referencia>
+                https://en.wikipedia.org/wiki/Ella,_Sri_Lanka#/media/File:SL_Ella_asv2020-01_img22_View_from_Little_Adams_Peak.jpg</referencia>
+            <referencia>https://en.wikipedia.org/wiki/Nine_Arch_Bridge</referencia>
+        </referencias>
+        <hitos>
+            <hito nombre="Calle principal de Ella"
+                descripcion="Una calle con multiples bares y restaurantes. Los restaurantes ofrecen vistas a la calle, normalmente repleta de tuk-tuks esperando para recoger pasajeros.">
+                <coordenadas>
+                    <longitud>81°02'55.20" E</longitud>
+                    <latitud>6°52'26.86" N</latitud>
+                    <altitud>1013 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">0</distancia>
+                <galeria_fotos>
+                    <fotografia> ella_main_street </fotografia>
+                </galeria_fotos>
+            </hito>
+            <hito nombre="Little Adam's Peak"
+                descripcion="Una modesta cumbre a 1146m que tiene unas vistas de escándalo hacia Ella y el entorno que nos rodea">
+                <coordenadas>
+                    <longitud>81°03'47.09" E</longitud>
+                    <latitud>6°51'54.45" N</latitud>
+                    <altitud>1146 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">2.7</distancia>
+                <galeria_fotos>
+                    <fotografia> little_adams_peak </fotografia>
+                </galeria_fotos>
+            </hito>
+            <hito nombre="Nine Arches Bridge"
+                descripcion="Famoso puente reconocible por sus nueve arcos. Es uno de los mejores ejemplos de contrucción ferroviaria de la época colonial del país">
+                <coordenadas>
+                    <longitud>81°03'39.19" E</longitud>
+                    <latitud>6°52'36.35" N</latitud>
+                    <altitud>1146 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">3.1</distancia>
+                <galeria_fotos>
+                    <fotografia> nine_arches_bridge </fotografia>
+                </galeria_fotos>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta nombre="Sigiriya" tipo="Mountain Bike" medio_transporte="Bicicleta de Montaña" duracion="6 horas"
+        agencia="Sin agencia" personas_adecuadas="Personas en buena forma física"
+        lugar_inicio="Sigiriya" direccion="Inamaluwa" recomendacion="9">
+        <descripcion>Ruta en bicicleta que va a Pirudangala Rock, un lugar con vistas fantásticas a Sigiriya Rock. Posteriormente visitamos el Museo de Sigiriya. Después iremos hasta Sigiriya Rock donde encontraremos los restos de un antiguo palacio, para finalmente volver al punto de partida</descripcion>
+        <coordenadas>
+            <longitud>80°45'07.94" E</longitud>
+            <latitud>7°56'51.46" N</latitud>
+            <altitud>201 m</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>
+                https://es.wikiloc.com/rutas-mountain-bike/sigiriya-pidurangala-rock-lion-rock-sigiriya-22300983
+                </referencia>
+            <referencia>https://es.wikipedia.org/wiki/Sigiriya</referencia>
+            <referencia>https://www.lovesrilanka.org/sigiriya-museum/</referencia>
+        </referencias>
+        <hitos>
+            <hito nombre="Pirudangala Rock"
+                descripcion="Zona de senderismo y escalada moderados hasta la cima de una roca, popular por sus vistas panorámicas.">
+                <coordenadas>
+                    <longitud>80°45'42.63" E</longitud>
+                    <latitud>7°57'58.80" N</latitud>
+                    <altitud>320 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">0</distancia>
+                <galeria_fotos>
+                    <fotografia> pirudangala_rock </fotografia>
+                </galeria_fotos>
+            </hito>
+            <hito nombre="Museo de Sigiriya"
+                descripcion="Establecido en 2009, el museo contiene galerías que muestran los esfuerzos de excavación llevados a cabo en Sigiriya.">
+                <coordenadas>
+                    <longitud>80°45'07.02" E</longitud>
+                    <latitud>7°57'25.41" N</latitud>
+                    <altitud>199 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">4.3</distancia>
+                <galeria_fotos>
+                    <fotografia> sigiriya_museum </fotografia>
+                </galeria_fotos>
+            </hito>
+            <hito nombre="Sigiriya Rock"
+                descripcion="En la cima de la roca hay un palacio, además de la Puerta del León y el muro de los espejos.">
+                <coordenadas>
+                    <longitud>80°45'35.81" E</longitud>
+                    <latitud>7°57'24.96" N</latitud>
+                    <altitud>199 m</altitud>
+                </coordenadas>
+                <distancia unidades="km">2</distancia>
+                <galeria_fotos>
+                    <fotografia> sigiriya_rock </fotografia>
+                </galeria_fotos>
+            </hito>
+        </hitos>
+    </ruta>
+</rutas>

@@ -1,0 +1,80 @@
+/* Especificidad: 002*/
+body>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 45%;
+}
+
+/* Especificidad: 003*/
+body>section>section {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+    border: 0.3em solid rgb(160, 0, 0);
+    margin-bottom: 1%;
+}
+
+/* Especificidad: 014*/
+body>section>section section:nth-of-type(1) {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    border-right: 0.2em solid rgb(160, 0, 0);
+    font-weight: bold;
+}
+
+/* Especificidad: 025*/
+body>section>section section:nth-of-type(1) p:first-of-type {
+    font-size: 1.2em;
+}
+
+/* Especificidad: 014*/
+body>section>section section:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 0.75em;
+    font-weight: bold;
+}
+
+/* Especificidad: 025*/
+body>section>section section:nth-of-type(2) p:first-of-type {
+    width: 100%;
+}
+
+/* Especificidad: 025*/
+body>section>section section:nth-of-type(2) p:not(:first-of-type) {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* Especificidad: 002*/
+    body>section {
+        /* Redefinición de width*/
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* Especificidad: 002*/
+    body>section {
+        /* Redefinición de width*/
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1150px) and (max-width:1800px) {
+
+    /* Especificidad: 002*/
+    body>section {
+        /* Redefinición de width*/
+        width: 60%;
+    }
+}

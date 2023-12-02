@@ -1,0 +1,38 @@
+/* Especificidad: 002*/
+body>header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Especificidad: 003*/
+body>header h1 {
+    margin-right: 0.8em;
+    margin-left: 0.25em;
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* Especificidad: 002*/
+    body>header {
+        gap: 0em;
+        /*Redefinicion de justify-content*/
+        justify-content: center;
+        /*Redefinicion de flex-direction*/
+        flex-direction: column;
+    }
+
+    /* Especificidad: 001*/
+    nav {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        /*Redefinicion de flex-wrap*/
+        flex-wrap: wrap;
+        /*Redefinicion de flex-direction*/
+        flex-direction: column;
+    }
+}

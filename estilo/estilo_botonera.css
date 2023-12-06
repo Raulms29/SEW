@@ -1,12 +1,17 @@
 /* Estilos para una mediaquery
 que muestre la botonera en tablet y móvil */
 /* Especificidad: 011*/
-section[data-type=botonera] {
+section[data-type=botonera]>section {
     display: flex;
     gap: 0.3em;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 1em;
+    visibility: hidden;
+}
+
+section[data-type=botonera] {
     visibility: hidden;
 }
 
@@ -17,8 +22,14 @@ section[data-type=botonera] h4 {
 }
 
 /* Especificidad: 012 */
-section[data-type=botonera] button {
-    width: 10.1%;
+section[data-type=botonera] {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Especificidad: 013*/
+section[data-type=botonera]>section>button {
+    width: 9%;
     height: 3em;
     text-align: center;
     background-color: #000;
@@ -28,7 +39,8 @@ section[data-type=botonera] button {
 @media screen and (max-width: 1150px) {
 
     /* Especificidad: 011 */
-    section[data-type=botonera] {
+    section[data-type=botonera],
+    section[data-type=botonera]>section {
         /* Redefinición de visibility*/
         visibility: visible;
     }

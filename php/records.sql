@@ -1,0 +1,1 @@
+CREATE TABLE `records`. (`Nombre` VARCHAR(255) NOT NULL , `Apellidos` VARCHAR(255) NOT NULL , `Nivel` VARCHAR(255) NOT NULL , `Tiempo` DOUBLE NOT NULL , PRIMARY KEY (`Nombre`, `Apellidos`, `Nivel`, `Tiempo`)) ENGINE = InnoDB;

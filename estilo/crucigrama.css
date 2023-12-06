@@ -18,7 +18,7 @@ main {
 }
 
 /* Especificidad: 001*/
-p {
+main>p {
     margin: 0;
     text-align: center;
     border: 0.03em solid black;
@@ -32,14 +32,25 @@ p {
 /* color: blue; */
 /* } */
 
+
+p[data-state="clicked"] {
+    border-color: red;
+    border-width: 0.1em;
+}
+
 /* Especificidad: 011*/
 
-p[data-state="empty"] {
+main p[data-state="empty"] {
     /*No hay color de primer plano establecido, en este caso no es necesario ya que los párrafos están vacíos*/
     background-color: black;
 }
 
-/* Especificidad: 002*/
-body>button {
+/* Especificidad: 003*/
+body>section>button {
     margin-bottom: 1em;
+}
+
+/* Especificidad: 013*/
+section ul li:nth-child(3) {
+    text-decoration: none;
 }

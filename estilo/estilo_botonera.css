@@ -18,7 +18,7 @@ section[data-type=botonera] h4 {
 
 /* Especificidad: 012 */
 section[data-type=botonera] button {
-    width: calc(15% - 1em);
+    width: 10.1%;
     height: 3em;
     text-align: center;
     background-color: #000;

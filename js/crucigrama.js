@@ -20,6 +20,7 @@ class Crucigrama {
             case "Difícil":
                 this.board = "4,.,.,=,36,#,#,#,25,#,#,*,#,.,#,#,#,.,.,- ,.,=,.,#,15,#,.,*,#,=,#,=,#,.,#,=,.,#,18,#,6,*,.,=,30,=,#,#,#,#,#,=,#,#,56,#,9,- ,.,=,3,#,.,#,#,*,#,+,#,#,#,*,20,.,.,=,18,#,#,#,.,#,#,=,#,=,#,#,#,=,#,#,18,#,24,.,.,=,72";
         }
+        this.dificultad = dificultad;
         var boardArray = this.board.split(",");
         for (let i = 0; i < this.rows; i++) {
             this.tablero[i] = [];
@@ -66,6 +67,8 @@ class Crucigrama {
 
     click(game) {
         this.attr("data-state", "clicked");
+        if (game.seleccion != undefined && game.seleccion != null)
+            game.seleccion.attr("data-state", "blank");
         game.seleccion = this
     }
 
@@ -81,6 +84,7 @@ class Crucigrama {
 
     calculate_date_difference() {
         var mil = this.end_time - this.init_time
+        this.tiempoSegundos = (this.end_time - this.init_time) / 1000.0;
 
         var segundos = Math.floor(mil / 1000);
         var minutos = Math.floor(segundos / 60);
@@ -205,8 +209,41 @@ class Crucigrama {
         if (this.check_win_condition()) {
             this.end_time = new Date();
             var difference = this.calculate_date_difference();
-            alert(`Ha tardado ${difference} en completar el crucigrama`)
+            alert(`Ha tardado ${difference} en completar el crucigrama`);
+            this.createRecordForm();
         }
 
+    }
+
+    createRecordForm() {
+        var seccionForm = $("<section>")
+        var form = $("<form>").attr("name", "formulario").attr("method", "post").attr("action", "#")
+        let nombreTexto = $("<p>").text("Nombre:")
+        let nombre = $("<input>").attr("type", "text").attr("name", "Nombre")
+        nombreTexto.append(nombre);
+
+        let apellidosTexto = $("<p>").text("Apellidos:")
+        let apellidos = $("<input>").attr("type", "text").attr("name", "Apellidos")
+        apellidosTexto.append(apellidos);
+
+        let dificultadTexto = $("<p>").text("Dificultad:")
+        let dificultad = $("<input>").attr("type", "text").attr("name", "Dificultad").val(this.dificultad).attr("readonly", "");
+        dificultadTexto.append(dificultad);
+
+        let tiempoTexto = $("<p>").text("Tiempo Empleado:")
+        let tiempo = $("<input>").attr("type", "text").attr("name", "Tiempo").val((this.tiempoSegundos) + " segundos").attr("readonly", "")
+        tiempoTexto.append(tiempo)
+
+        seccionForm.append($("<h4>").text("Formulario"))
+        form.append(nombreTexto);
+        form.append(apellidosTexto);
+        form.append(dificultadTexto);
+        form.append(tiempoTexto);
+
+
+        form.append($("<input>").val("Guardar Record").attr("name", "boton").attr("type", "submit"));
+        seccionForm.append(form);
+
+        seccionForm.appendTo($("body"));
     }
 }

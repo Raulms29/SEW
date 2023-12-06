@@ -39,7 +39,7 @@
     <nav>
         <a accesskey="R" href="memoria.html" tabindex=8>Juego de Memoria</a>
         <a accesskey="K" href="sudoku.html" tabindex=9>Sudoku</a>
-        <a accesskey="C" href="crucigrama.html" tabindex=10>Crucigrama Matemático</a>
+        <a accesskey="C" href="crucigrama.php" tabindex=10>Crucigrama Matemático</a>
     </nav>
 
     <script>
@@ -50,15 +50,34 @@
     </script>
 
     <h3>Crucigrama Matemático</h3>
-    <button onclick="crucigrama.startGame('Fácil')">
-        Nivel Fácil
-    </button>
-    <button onclick="crucigrama.startGame('Medio')">
-        Nivel Medio
-    </button>
-    <button onclick="crucigrama.startGame('Difícil')">
-        Nivel Difícil
-    </button>
+
+    <section>
+        <header>
+            <h4>Instrucciones</h4>
+        </header>
+        <p>Para completar el crucigrama seleccione una casilla haciendo click en ella y luego escriba utilizando el
+            teclado el número que corresponda a dicha casilla.</p>
+        <h5>Símbolos</h5>
+        <p>Estos son los símbolos usados por el crucigrama matemático para representar operaciones</p>
+        <ul>
+            <li>Suma: +</li>
+            <li>Resta: -</li>
+            <li>Multiplicación: *</li>
+            <li>División: /</li>
+        </ul>
+    </section>
+    <section>
+        <h4>Selección de Dificultad</h4>
+        <button onclick="crucigrama.startGame('Fácil')">
+            Nivel Fácil
+        </button>
+        <button onclick="crucigrama.startGame('Medio')">
+            Nivel Medio
+        </button>
+        <button onclick="crucigrama.startGame('Difícil')">
+            Nivel Difícil
+        </button>
+    </section>
 
     <main>
     </main>
@@ -79,7 +98,6 @@
         <button onclick="crucigrama.introduceElement('-')">-</button>
         <button onclick="crucigrama.introduceElement('/')">/</button>
     </section>
-
 </body>
 
 </html>

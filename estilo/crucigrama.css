@@ -54,3 +54,10 @@ body>section>button {
 section ul li:nth-child(3) {
     text-decoration: none;
 }
+
+p[name="error"] {
+    font-weight: bold;
+    color: red;
+    visibility: hidden;
+    font-size: 1.1em;
+}

@@ -206,8 +206,8 @@ class Crucigrama {
         }
         else {
             this.tablero[row][col] = 0;
-            this.seleccion.attr("data-state", "blank");
-            alert("El elemento introducido en la casilla no es correcto")
+            this.seleccion.attr("data-state", "clicked");
+            this.showErrorMessage();
         }
 
 
@@ -218,6 +218,14 @@ class Crucigrama {
             this.createRecordForm();
         }
 
+    }
+
+    showErrorMessage() {
+        let parrafo = $("p[name=error]")
+        parrafo.css("visibility", "visible");
+        setTimeout(() => {
+            parrafo.css("visibility", "hidden");
+        }, 2000);
     }
 
     createRecordForm() {

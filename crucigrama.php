@@ -77,6 +77,8 @@
         </button>
     </section>
 
+    <p name="error">El número u operador introducido en la casilla no es correcto.</p>
+
     <main>
     </main>
 

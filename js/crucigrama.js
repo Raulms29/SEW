@@ -66,10 +66,15 @@ class Crucigrama {
     }
 
     click(game) {
-        this.attr("data-state", "clicked");
-        if (game.seleccion != undefined && game.seleccion != null)
-            game.seleccion.attr("data-state", "blank");
-        game.seleccion = this
+        if (game.seleccion != this) {
+            this.attr("data-state", "clicked");
+            if (game.seleccion != undefined && game.seleccion != null) {
+                if (game.seleccion.attr("data-state") != "correct") {
+                    game.seleccion.attr("data-state", "blank");
+                }
+            }
+            game.seleccion = this
+        }
     }
 
     check_win_condition() {

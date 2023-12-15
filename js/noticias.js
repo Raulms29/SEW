@@ -1,6 +1,7 @@
 class Noticias {
-    noticia = this;
+
     constructor() {
+        let noticia = this;
         var isSupported = false;
         if (window.File && window.FileReader && window.FileList && window.Blob) {
             isSupported = true;
@@ -13,11 +14,12 @@ class Noticias {
         }
         var button = document.querySelector("button");
         button.addEventListener("click", function () {
-            noticia.generateNewFromUser()
+            noticia.generateNewFromUser();
         });
     }
 
     readInputFile(files) {
+        let noticia = this;
         var file = files[0];
         var tipoTexto = /text.*/;
         if (file.type.match(tipoTexto)) {
@@ -46,7 +48,7 @@ class Noticias {
         let subtitle = parts[1];
         let content = parts[2];
 
-        let pTitle = $("<p></p>").text(title);
+        let pTitle = $("<h4></h4>").text(title);
         let pSubtitle = $("<p></p>").text(subtitle);
         let pAuthor = $("<p></p>").text(author);
         let pContent = $("<p></p>").text(content);

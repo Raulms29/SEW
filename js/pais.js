@@ -105,13 +105,13 @@ class Pais {
                     let fecha = new Date(txtFecha);
                     let dayName = fecha.toLocaleDateString('es', dateFormat);
                     dayName = dayName.charAt(0).toUpperCase() + dayName.slice(1);
-                    let day = $("<p></p>").text(dayName);
+                    let day = $("<h4></h4>").text(dayName);
                     day.appendTo(section)
                     let section2 = document.createElement("section");
                     $(`body>section section:nth-of-type(${i + 1})`).append(section2);
 
                     let txtHora = fechaYHora[1].split(":");
-                    let hora = $("<p></p>").text(txtHora[0] + ":" + txtHora[1]);
+                    let hora = $("<h5></h5>").text(txtHora[0] + ":" + txtHora[1]);
                     let imagen = $("<img></img>").attr("src", iconUrl).attr("alt", weather.weather[0].description);
                     let maxTempParagraph = $("<p></p>").text("Temperatura Máxima: " + maxTemp + " °C")
                     let minTempParagraph = $("<p></p>").text("Temperatura Mínima: " + minTemp + " °C")

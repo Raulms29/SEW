@@ -12,20 +12,22 @@ main>article {
     margin-top: 1em;
 }
 
-/* Especificidad: 013*/
-main>article>p:first-of-type {
-    font-weight: bolder;
+/* Especificidad: 003*/
+main>article>h4 {
+    font-weight: bold;
     font-size: 1.3em;
+    /*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
+    color: black;
 }
 
 /* Especificidad: 013*/
-main>article>p:nth-of-type(2) {
+main>article>p:nth-of-type(1) {
     font-weight: bold;
     font-size: 1.1em;
 }
 
 /* Especificidad: 013*/
-main>article>p:nth-of-type(3) {
+main>article>p:nth-of-type(2) {
     text-align: right;
 }
 

@@ -67,7 +67,7 @@ section>h4 {
 
 /* Especificidad: 012*/
 header p:first-child {
-    /*hereda  background-color de body #f0f4f5*/
+    /*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
     color: #2f2c79;
     font-size: 1.025em;
     font-weight: bolder;

@@ -170,27 +170,24 @@ class Viajes {
             else {
                 seccionHito.append($("<p>").text(`Distancia desde el Hito anterior: ${distancia}`))
             }
-            var seccionCoordenadas = $("<section>")
             var headerCoords = $("<header>")
             headerCoords.append($("<p>").text(`Coordenadas`))
-            seccionCoordenadas.append(headerCoords);
-            seccionCoordenadas.append($("<p>").text(`Latitud: ${latitud}`));
-            seccionCoordenadas.append($("<p>").text(`Longitud: ${longitud}`));
-            seccionCoordenadas.append($("<p>").text(`Altitud: ${altitud}`));
-            seccionCoordenadas.appendTo(seccionHito);
-            var seccionGaleria = $("<section>")
+            seccionHito.append(headerCoords);
+            seccionHito.append($("<p>").text(`Latitud: ${latitud}`));
+            seccionHito.append($("<p>").text(`Longitud: ${longitud}`));
+            seccionHito.append($("<p>").text(`Altitud: ${altitud}`));
+            seccionHito.appendTo(seccionHito);
             var headerGal = $("<header>")
             headerGal.append($("<p>").text(`Galería`))
-            seccionGaleria.append(headerGal);
+            seccionHito.append(headerGal);
 
             if (fotos != null) {
-                this.añadirFotos(fotos, seccionGaleria);
+                this.añadirFotos(fotos, seccionHito);
             }
             let videos = hito.querySelector("galeria_videos")
             if (videos != null) {
-                this.añadirVideos(videos, seccionGaleria);
+                this.añadirVideos(videos, seccionHito);
             }
-            seccionGaleria.appendTo(seccionHito);
             seccionHito.appendTo(seccionHitos);
         }
     }
@@ -198,7 +195,7 @@ class Viajes {
     añadirFotos(fotos, seccionHitos) {
         var fotosArray = fotos.querySelectorAll("fotografia")
         for (let p = 0; p < fotosArray.length; p++) {
-            let photoURL = `multimedia/img/rutas/${fotosArray[p].textContent.trim()}.jpg`
+            let photoURL = `../multimedia/img/rutas/${fotosArray[p].textContent.trim()}.jpg`
             seccionHitos.append($("<img>").attr("alt", fotosArray[p].textContent).attr("src", photoURL))
         }
     }
@@ -333,4 +330,62 @@ class Viajes {
 
 
 
+}
+
+
+class Carrusel {
+    constructor() {
+        this.configureCarrusel();
+    }
+
+
+    next() {
+        // check if current slide is the last and reset current slide
+        if (this.curSlide === this.maxSlide) {
+            this.curSlide = 0;
+        } else {
+            this.curSlide++;
+        }
+
+        //   move slide by -100%
+        this.slides.forEach((slide, indx) => {
+            var trans = 100 * (indx - this.curSlide);
+            $(slide).css('transform', 'translateX(' + trans + '%)')
+        });
+    }
+
+    prev() {
+        // check if current slide is the first and reset current slide to last
+        if (this.curSlide === 0) {
+            this.curSlide = this.maxSlide;
+        } else {
+            this.curSlide--;
+        }
+
+        //   move slide by 100%
+        this.slides.forEach((slide, indx) => {
+            var trans = 100 * (indx - this.curSlide);
+            $(slide).css('transform', 'translateX(' + trans + '%)')
+        });
+    }
+
+    configureCarrusel() {
+        this.slides = document.querySelectorAll("body>article>img");
+        this.nextSlide = document.querySelector("button[data-action='next']");
+        this.curSlide = 0;
+        this.maxSlide = this.slides.length - 1;
+        this.prevSlide = document.querySelector("button[data-action='prev']");;
+        let carrusel = this;
+        // add event listener and navigation functionality
+        this.nextSlide.addEventListener("click", function () {
+            carrusel.next();
+        });
+
+        // add event listener and navigation functionality
+        this.prevSlide.addEventListener("click", function () {
+            carrusel.prev();
+        });
+
+        this.next();
+    }
 }

@@ -221,10 +221,10 @@ class Crucigrama {
     }
 
     showErrorMessage() {
-        let parrafo = $("p[name=error]")
-        parrafo.css("visibility", "visible");
+        let parrafo = $("body>p")
+        parrafo.attr("data-state", "visible");
         setTimeout(() => {
-            parrafo.css("visibility", "hidden");
+            parrafo.attr("data-state", "hidden");
         }, 2000);
     }
 

@@ -1,0 +1,56 @@
+/* Especificidad: 013*/
+section ul li:nth-child(3) {
+    text-decoration: none;
+}
+
+/* Especificidad: 012*/
+body>section:nth-of-type(4) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+/* Especificidad: 013*/
+body>section:nth-of-type(4)>header {
+    width: 100%;
+}
+
+/* Especificidad: 013*/
+body>section:nth-of-type(4)>section {
+    width: 30%;
+    border: solid 0.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0em;
+    padding-bottom: 1em;
+    border-radius: 10%;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+/* Especificidad: 014*/
+body>section:nth-of-type(4)>section>h5 {
+    font-size: 1.45em;
+    font-weight: 400;
+    /*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
+    color: black;
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* Especificidad: 013*/
+    body>section:nth-of-type(4)>section {
+        /* Redefinición de width*/
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Especificidad: 013*/
+    body>section:nth-of-type(4)>section {
+        /* Redefinición de width*/
+        width: 90%;
+    }
+}

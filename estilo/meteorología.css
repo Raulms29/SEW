@@ -30,9 +30,21 @@ body>section>section {
     border-radius: 5%;
 }
 
-/* Especificidad: 012*/
-section p:first-of-type {
+/* Especificidad: 002*/
+section>h4 {
     font-weight: bold;
+    /*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
+    color: black;
+    font-size: 1em;
+}
+
+/* Especificidad: 002*/
+section>h5 {
+    font-weight: bold;
+    /*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
+    color: black;
+    font-size: 1em;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 950px) {

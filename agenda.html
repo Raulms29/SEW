@@ -29,7 +29,7 @@
             <a accesskey="N" href="noticias.html" tabindex=3>Noticias</a>
             <a accesskey="A" href="agenda.html" tabindex=4>Agenda</a>
             <a accesskey="M" href="meteorologia.html" tabindex=5>Meteorologia</a>
-            <a accesskey="V" href="viajes.html" tabindex=6>Viajes</a>
+            <a accesskey="V" href="php/viajes.php" tabindex=6>Viajes</a>
             <a accesskey="J" href="juegos.html" tabindex=7>Juegos</a>
             <a accesskey="T" href="api.html" tabindex=8>Notas</a>
         </nav>
@@ -39,7 +39,7 @@
         Obtener Información Fórmula 1
     </button>
 
-    <!-- TODO Ask, section lack heading, but it's added when pressing the button -->
+    <!-- Warning section lack heading, este se añade al pulsar el botón -->
     <section>
     </section>
     <script>
@@ -47,7 +47,6 @@
         $("button").on("click", function () {
             agenda.updateSeasonData();
         })
-
     </script>
 
 </body>

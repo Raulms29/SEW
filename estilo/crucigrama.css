@@ -27,19 +27,37 @@ main>p {
 }
 
 /* Especificidad: 011*/
-/* p:not([data-state="blocked"]) { */
-/*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
-/* color: blue; */
-/* } */
+p:not([data-state="blocked"]) {
+    /*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
+    color: blue;
+}
 
-
+/* Especificidad: 011*/
 p[data-state="clicked"] {
-    border-color: red;
+    border-color: blue;
     border-width: 0.1em;
 }
 
 /* Especificidad: 011*/
+p[data-state="hidden"],
+p[data-state="visible"] {
+    font-weight: bold;
+    /*Hereda  background-color de body #f0f4f5, aunque esta en otra hoja de estilo*/
+    color: red;
+    font-size: 1.1em;
+}
 
+/* Especificidad: 011*/
+p[data-state="hidden"] {
+    visibility: hidden;
+}
+
+/* Especificidad: 011*/
+p[data-state="visible"] {
+    visibility: visible;
+}
+
+/* Especificidad: 011*/
 main p[data-state="empty"] {
     /*No hay color de primer plano establecido, en este caso no es necesario ya que los párrafos están vacíos*/
     background-color: black;
@@ -53,11 +71,4 @@ body>section>button {
 /* Especificidad: 013*/
 section ul li:nth-child(3) {
     text-decoration: none;
-}
-
-p[name="error"] {
-    font-weight: bold;
-    color: red;
-    visibility: hidden;
-    font-size: 1.1em;
 }

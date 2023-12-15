@@ -69,6 +69,7 @@ class BlocNotas {
         });
         seccionNota.append(tituloNota);
         seccionNota.append(contenido);
+        seccionBotones.append($("<h4></h4>").text("Opciones: "));
         seccionBotones.append(copia);
         seccionBotones.append(eliminar);
         seccionNota.append(seccionBotones);

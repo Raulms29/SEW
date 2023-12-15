@@ -16,6 +16,16 @@ main>section>p {
     font-weight: bold;
 }
 
+section>h4 {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    /* Sin color de fondo, este se especifica en otra hoja de estilo*/
+    color: black;
+}
+
 /* Especificidad: 013*/
 main>section>p:last-of-type {
     display: flex;

@@ -48,18 +48,22 @@
         <section>
             <h3>Añadir Mediante Archivo:</h3>
             <p>
-                <input type="file">
+                <!-- Hay un archivo en multimedia llamado notas.txt para probar esta funcionalidad -->
+                <label for="archivo">Selecciona un Archivo</label>
+                <input type="file" id="archivo">
             </p>
         </section>
         <section>
             <h3>Añadir Manualmente: </h3>
             <p>
-                Título:
-                <input type="text" name="titulo" />
+                <label for="title">Título</label>
+                <input type="text" name="titulo" id="title" />
             </p>
             <p>
-                Contenido:
-                <textarea name="contenidoNoticia" id="textArea" cols="30" rows="8"></textarea>
+                <label for="content">
+                    Contenido:
+                </label>
+                <textarea name="contenidoNoticia" id="content" cols="30" rows="8"></textarea>
             </p>
         </section>
         <button>Añadir Nota</button>
